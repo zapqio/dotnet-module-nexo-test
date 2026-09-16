@@ -7,9 +7,12 @@ współdzielonych. Jest też wzorcem csproj dla własnego modułu na Nexo.Connec
 
 ## Instalacja
 
-`Nexo.TestConnect.zip` do `Modules\` runnera obok `Nexo.Connection.zip`, restart usługi, w panelu Web
-metoda "Who am I (test)". Bez `Nexo.Connection.zip` runner zgłosi w logu
+`Nexo.TestConnect.zip` do `Modules\` runnera obok `Nexo.Connection.zip` i `Nexo.Sdk.zip` (SDK InsERT
+w wersji Subiekta, pakuje je `update-nexo-sdk.ps1` z repo Nexo.Connection), restart usługi, w panelu Web
+metoda "Who am I (test)". Bez którejś z tych dwóch paczek runner zgłosi w logu
 `Metoda Nexo.TestConnect z modułu Nexo.TestConnect nie została utworzona ...` i ogłosi się bez tej metody.
+SDK w innej wersji niż Subiekt kończy zadanie błędem `SDK <wersja> (paczka Nexo.Sdk) nie połączył się
+z Subiektem: ...` z instrukcją, co uruchomić.
 
 ## Budowanie
 
