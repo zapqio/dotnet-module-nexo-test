@@ -1,9 +1,13 @@
 # Zapqio Runner - moduł Nexo.TestConnect
 
 Metoda **"Who am I (test)"**: loguje się do InsERT nexo przez współdzielony `NexoClient` z paczki
-[Nexo.Connection](https://github.com/zapqio/module-nexo-connection) i zwraca sygnaturę zalogowanego
+[Nexo.Connection](https://github.com/zapqio/dotnet-module-nexo-connection) i zwraca sygnaturę zalogowanego
 operatora. Służy do sprawdzenia instalacji: SDK, danych w `nexoModule.json` i mechanizmu modułów
 współdzielonych. Jest też wzorcem csproj dla własnego modułu na Nexo.Connection.
+
+Od Nexo.Connection 1.1.0 taka metoda (**„Nexo: Who am I”**) jest w samej paczce Connection, więc do sprawdzenia
+instalacji ten moduł nie jest już potrzebny - instaluje ją `install-nexo.ps1` z repo Connection. To repo zostaje
+jako wzorzec csproj i kodu modułu konsumenckiego.
 
 ## Instalacja
 
